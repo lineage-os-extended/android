@@ -30,5 +30,5 @@ Finally to build:
 ```
   
 
-Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
+Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.<br/>
 Please follow our coolapk account [@随波逐流6662](http://www.coolapk.com/u/1615845)
