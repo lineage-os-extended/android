@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remove repos -->
+  <remove-project name="LineageOS/android_frameworks_base" />
+  <remove-project name="LineageOS/android_packages_apps_Settings" />
+  <remove-project name="LineageOS/android_vendor_lineage" />
+  <remove-project name="LineageOS/android_lineage-sdk" />
+  <remove-project name="LineageOS/android_packages_overlays_Lineage" />
+  <remove-project name="LineageOS/android_packages_apps_LineageParts" />
+  
+
+  <!-- mod repo -->
+
+  <project name="iheyuhui/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-16.0" />
+  <project name="iheyuhui/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="lineage-16.0" />
+  <project name="iheyuhui/android_vendor_lineage" path="vendor/lineage" remote="github" revision="lineage-16.0" />
+  <project name="iheyuhui/android_lineage-sdk" path="lineage-sdk" remote="github" revision="lineage-16.0" />
+  <project name="iheyuhui/android_packages_overlays_Lineage" path="packages/overlays/Lineage" remote="github" revision="lineage-16.0" />
+  <project name="iheyuhui/android_packages_apps_LineageParts" path="packages/apps/LineageParts" remote="github" revision="lineage-16.0" />
+  
+  <!-- Lineage dependencies -->
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
+  
+
+<!-- FDE -->
+ <!--   <project path="vendor/qcom/opensource/cryptfs_hw" name="LineageOS/android_vendor_qcom_opensource_cryptfs_hw" 
+remote="github" revision="lineage-16.0"/>  -->
+  
+
+</manifest>
