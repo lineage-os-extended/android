@@ -7,14 +7,25 @@ Getting started
 To get started with Android/LineageOS, you'll need to get
 familiar with [Repo](https://source.android.com/source/using-repo.html) and [Version Control with Git](https://source.android.com/source/version-control.html).
 
+How to Build?
 To initialize your local repository using the LineageOS trees, use a command like this:
-```
-repo init -u git://github.com/iheyuhui/android.git -b lineage-16.0
-```
+
+  repo init -u git://github.com/iheyuhui/android.git -b lineage-16.0
+  
+To initialize a shallow clone, which will save even more space & time, use a command like this:
+
+  repo init --depth=1 -u git://github.com/iheyuhui/android.git -b lineage-16.0
+  
 Then to sync up:
 ```
-repo sync
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
+
 ```
+Finally to build:
+  . build/envsetup.sh
+  export LC_ALL=C
+  brunch lineage_device-userdebug -j8
+
 Please see the [LineageOS Wiki](https://wiki.lineageos.org/) for building instructions, by device.
 
 
