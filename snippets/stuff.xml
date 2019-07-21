@@ -8,6 +8,7 @@
   <remove-project name="LineageOS/android_lineage-sdk" />
   <remove-project name="LineageOS/android_packages_overlays_Lineage" />
   <remove-project name="LineageOS/android_packages_apps_LineageParts" />
+  <remove-project name="LineageOS/android_build" />
   
 
   <!-- extended repo -->
@@ -18,7 +19,15 @@
   <project name="lineage-os-extended/android_lineage-sdk" path="lineage-sdk" remote="github" revision="lineage-16.0" />
   <project name="lineage-os-extended/android_packages_overlays_Lineage" path="packages/overlays/Lineage" remote="github" revision="lineage-16.0" />
   <project name="lineage-os-extended/android_packages_apps_LineageParts" path="packages/apps/LineageParts" remote="github" revision="lineage-16.0" />
-  
+ <project name="lineage-os-extended/android_build" path="build/make" remote="github" revision="lineage-16.0" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project> 
   <!-- Lineage dependencies -->
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings" remote="github" />
   
