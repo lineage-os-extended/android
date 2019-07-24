@@ -1,4 +1,4 @@
-LineageMOD
+LineageOS Extended
 ===========
 
 Getting started
