@@ -2,6 +2,7 @@
 <manifest>
   <!-- Remove repos -->
   <remove-project name="platform/external/sqlite" />
+  <remove-project name="platform/frameworks/opt/net/ims" />
   <remove-project name="LineageOS/android_frameworks_base" />
   <remove-project name="LineageOS/android_packages_apps_Settings" />
   <remove-project name="LineageOS/android_vendor_lineage" />
@@ -14,6 +15,7 @@
 
   <!-- extended repo -->
   <project name="lineage-os-extended/android_external_sqlite" path="external/sqlite" remote="github" revision="9.0" />
+  <project name="lineage-os-extended/frameworks_opt_net_ims" path="frameworks/opt/net/ims" remote="github" revision="pie" />
   <project name="lineage-os-extended/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-16.0" />
   <project name="lineage-os-extended/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="lineage-16.0" />
   <project name="lineage-os-extended/android_vendor_lineage" path="vendor/lineage" remote="github" revision="lineage-16.0" />
