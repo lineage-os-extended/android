@@ -18,6 +18,7 @@
   <project name="lineage-os-extended/frameworks_opt_net_ims" path="frameworks/opt/net/ims" remote="github" revision="pie" />
   <project name="lineage-os-extended/android_frameworks_base" path="frameworks/base" remote="github" revision="lineage-16.0" />
   <project name="lineage-os-extended/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="lineage-16.0" />
+  <project name="lineage-os-extended/packages_apps_Longshot" path="packages/apps/Longshot" remote="github" revision="pie-plus" />
   <project name="lineage-os-extended/android_vendor_lineage" path="vendor/lineage" remote="github" revision="lineage-16.0" />
   <project name="lineage-os-extended/android_lineage-sdk" path="lineage-sdk" remote="github" revision="lineage-16.0" />
   <project name="lineage-os-extended/android_device_lineage_sepolicy" path="device/lineage/sepolicy" remote="github" revision="lineage-16.0" />
